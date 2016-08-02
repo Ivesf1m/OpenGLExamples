@@ -35,9 +35,6 @@ int main(int argc, char** argv)
 	//Inicialização da GLUT - lendo argumentos da linha de comando. 
 	glutInit(&argc, argv);
 
-	cout << "depois do glutinit" << endl;
-	getchar();
-
 	//Modo de Display
 	//GLUT_DOUBLE: ativação do double buffering
 	//GLUT_RGB: significa que nossos pixels terão 3 componentes, nesta ordem.
@@ -54,9 +51,6 @@ int main(int argc, char** argv)
 
 	//Função auxiliar para inicializar os estados da GL que desejarmos.
 	init();
-
-	cout << "depois do init" << endl;
-	getchar();
 
 	//Essa função dá início ao loop de renderização.
 	glutMainLoop();
