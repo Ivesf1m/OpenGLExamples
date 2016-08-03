@@ -150,7 +150,7 @@ void init()
 	glEnable(GL_TEXTURE_2D);
 
 	//Carregando textura
-	string texName = imgPath + "tex.bmp";
+	string texName = imgPath + "tex.png";
 	cout << texName << endl;
 	texId = SOIL_load_OGL_texture(texName.c_str(), SOIL_LOAD_AUTO,
 		SOIL_CREATE_NEW_ID, SOIL_FLAG_INVERT_Y);
@@ -199,7 +199,7 @@ int main(int argc, char** argv)
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
 
 	//Tamanho da janela em pixels
-	glutInitWindowSize(600, 600);
+	glutInitWindowSize(1366, 768);
 
 	//Criando janela com o título passado.
 	glutCreateWindow("Textura");

@@ -7,7 +7,7 @@ uniform sampler2D texSampler;
 
 void main()
 {
-	//color = texture(texSampler, tc);
 	vec3 texrgb = texture(texSampler, tc).rgb * 255.0f;
-	color = vec4((floor(texrgb / 8.0f ) * 8.0f) / 255.0f, 1.0f);
+	float scaleFactor = 2.0f;
+	color = vec4((floor(texrgb / scaleFactor ) * scaleFactor) / 255.0f, 1.0f);
 }
